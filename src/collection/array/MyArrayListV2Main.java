@@ -1,9 +1,9 @@
 package collection.array;
 
-public class MyArrayListV1Main {
+public class MyArrayListV2Main {
 
     public static void main(String[] args) {
-        MyArrayListV1 list = new MyArrayListV1();
+        MyArrayListV2 list = new MyArrayListV2(2);
         System.out.println("== 데이터 추가 ==");
         System.out.println(list);
         list.add("a");
@@ -12,10 +12,11 @@ public class MyArrayListV1Main {
         System.out.println(list);
         list.add("c"); 
         System.out.println(list);
-
-        System.out.println(" == 기능 추가 ==");
-        System.out.println("list.size() : "+list.size());
-        System.out.println("list.get(1) : "+list.get(1));
-        System.out.println("list.indexOf('c') : "+list.indexOf("c"));
+        list.add("d");
+        System.out.println(list);
+        list.add("e");
+        System.out.println(list);
+        list.add("f");
+        System.out.println(list);
     }
 }
